@@ -35,7 +35,7 @@ public class ConfigurationTest {
         // When
         String properValue = testedConfig.getStringProperty(knownPropertyName, expectedDefault);
         // Then
-        assertEquals(properValue,"qwerty");
+        assertEquals("qwerty", properValue);
     }
 
     @Test
@@ -46,8 +46,9 @@ public class ConfigurationTest {
         // When
         Long longProperty = testedConfig.getLongProperty(unknownPropertyName, expectedDefault);
         // Then
-        assertEquals(longProperty,expectedDefault );
+        assertEquals(expectedDefault, longProperty);
     }
+
     @Test
     public void shouldReturnSetLongValue() {
         // Given

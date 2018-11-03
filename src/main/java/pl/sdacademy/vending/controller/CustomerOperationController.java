@@ -7,8 +7,8 @@ public class CustomerOperationController {
     private VendingMachine machine;
 
 
-    public CustomerOperationController(){
-        machine = new VendingMachine();
+    public CustomerOperationController(VendingMachine machine){
+        this.machine = machine;
     }
 
     public void printMachine(){
