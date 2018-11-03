@@ -15,29 +15,29 @@ public class CustomerOperationController {
         char letter = 'A';
 
         for (int k = 0; k < machine.colsCount(); k++) {
-            for (int i = 0; i < machine.rowCount( ); i++) {
-                printUpperBoundary(i,k);
+            for (int r = 0; r < machine.rowCount( ); r++) {
+                printUpperBoundary(r,k);
             }
             System.out.println( );
-            for (int i = 1; i <= machine.rowCount( ); i++) {
-                printSymbol(i,k, letter);
+            for (int r = 1; r <= machine.rowCount( ); r++) {
+                printSymbol(r,k, letter);
 
             }
             System.out.println( );
-            for (int i = 0; i < machine.rowCount( ); i++) {
-                printLowerBoundary(i,k);
+            for (int r = 0; r < machine.rowCount( ); r++) {
+                printLowerBoundary(r,k);
             }
             letter++;
             System.out.println( );
         }
     }
-    private void  printUpperBoundary(int i, int k){
+    private void  printUpperBoundary(int r, int k){
         System.out.print("+--------+");
     }
-    private void  printSymbol(int i, int k, char letter){
-        System.out.print("|   " + letter + i + "   |");
+    private void  printSymbol(int r, int k, char letter){
+        System.out.print("|   " + letter + r + "   |");
     }
-    private void  printLowerBoundary(int i, int k){
+    private void  printLowerBoundary(int r, int k){
         System.out.print("+--------+");
     }
 }
