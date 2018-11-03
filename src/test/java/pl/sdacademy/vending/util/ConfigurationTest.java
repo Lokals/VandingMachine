@@ -11,6 +11,7 @@ public class ConfigurationTest {
 
     @Before
     public void init(){
+
         testedConfig = new Configuration();
     }
 

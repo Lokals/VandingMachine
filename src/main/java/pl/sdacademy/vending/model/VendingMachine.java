@@ -4,17 +4,28 @@ import pl.sdacademy.vending.util.Configuration;
 
 public class VendingMachine {
     private final Configuration configuration;
+    private final Long rowsCount;
+    private final Long colsCount;
 
     public VendingMachine(Configuration configuration){
         this.configuration = configuration;
+        rowsCount = configuration.getLongProperty("machine.size.rows", 6L);
+        colsCount = configuration.getLongProperty("machine.size.cols",4L);
+        if (rowsCount<=0 || rowsCount > 26L){
+            throw new IllegalArgumentException("Row count " + rowsCount + " is invalid");
+        }
+        if (colsCount<=0 || colsCount > 9L){
+            throw new IllegalArgumentException("Columns count " + colsCount + " is invalid");
+        }
+
     }
     public Long rowCount(){
 
 
-        return configuration.getLongProperty("machine.size.rows",6L);
+        return rowsCount;
     }
 
     public Long colsCount(){
-        return configuration.getLongProperty("machine.size.cols", 4L);
+        return colsCount;
     }
 }

@@ -10,6 +10,8 @@ public class Main {
         Configuration configuration = new Configuration( );
         VendingMachine machine = new VendingMachine(configuration );
         new CustomerOperationController(machine).printMachine();
+
+
     }
 
 }
