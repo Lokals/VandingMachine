@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bac99589-0fdf-462b-adcb-3d1ca4968d27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/util/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sdacademy/vending/util/StringUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sdacademy/vending/util/StringUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sdacademy/vending/util/StringUtilTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,7 +28,7 @@
           <entry key="gitignore" value="1" />
           <entry key="java" value="27" />
           <entry key="properties" value="7" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -35,22 +36,25 @@
           <entry key="JAVA" value="27" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="7" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="10" />
           <entry key="gitignore" value="11" />
-          <entry key="java" value="5466" />
+          <entry key="java" value="6676" />
           <entry key="properties" value="103" />
-          <entry key="txt" value="271" />
+          <entry key="txt" value="327" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5466" />
-          <entry key="PLAIN_TEXT" value="282" />
+          <entry key="JAVA" value="6676" />
+          <entry key="PLAIN_TEXT" value="348" />
           <entry key="Properties" value="103" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -61,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="178">
-              <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+              <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/ThinkingIsFun.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -132,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/util/StringUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="271">
+              <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -141,8 +145,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pl/sdacademy/vending/util/StringUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+            <state relative-caret-position="84">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,15 +182,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -214,7 +209,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/pl/sdacademy/test.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/util/Configuration.java" />
         <option value="$PROJECT_DIR$/src/test/resources/application.properties" />
@@ -227,8 +221,9 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/model/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/ThinkingIsFun.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/model/VendingMachine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/util/StringUtil.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/pl/sdacademy/vending/util/StringUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/util/StringUtil.java" />
       </list>
     </option>
   </component>
@@ -426,32 +421,6 @@
               <item name="VandingMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="VandingMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="VandingMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VandingMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VandingMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -460,7 +429,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="coc&#9;FILE&#9;file://C:/Users/0o0/IdeaProjects/jvm/VandingMachine/src/main/java/pl/sdacademy/vending/controller/CustomerOperationController.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541327543829" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541333591694" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -494,8 +463,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringUtilTest.shouldReturnProperLenghtWhenStringIsEvenAndLessThan8">
-    <configuration name="StringUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StringUtilTest.shouldProperlyFormatMoney">
+    <configuration name="StringUtilTest.parametersForShouldProperlyFormatMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VandingMachine" />
       <extension name="coverage">
         <pattern>
@@ -505,6 +474,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.sdacademy.vending.util" />
       <option name="MAIN_CLASS_NAME" value="pl.sdacademy.vending.util.StringUtilTest" />
+      <option name="METHOD_NAME" value="parametersForShouldProperlyFormatMoney" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringUtilTest.shouldProperlyFormatMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VandingMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sdacademy.vending.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sdacademy.vending.util" />
+      <option name="MAIN_CLASS_NAME" value="pl.sdacademy.vending.util.StringUtilTest" />
+      <option name="METHOD_NAME" value="shouldProperlyFormatMoney" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -541,22 +528,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringUtilTest.shouldReturnUnmodifiedTextIfLenghtMatched" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="VandingMachine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.sdacademy.vending.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.sdacademy.vending.util" />
-      <option name="MAIN_CLASS_NAME" value="pl.sdacademy.vending.util.StringUtilTest" />
-      <option name="METHOD_NAME" value="shouldReturnUnmodifiedTextIfLenghtMatched" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StringUtilTest.shouldTrimTooLongText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VandingMachine" />
       <extension name="coverage">
@@ -574,19 +545,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.StringUtilTest.shouldReturnUnmodifiedTextIfLenghtMatched" />
       <item itemvalue="JUnit.StringUtilTest.shouldTrimTooLongText" />
       <item itemvalue="JUnit.StringUtilTest.shouldReturnProperLenghtWhenStringIsEvenAndLessThan8" />
-      <item itemvalue="JUnit.StringUtilTest" />
       <item itemvalue="JUnit.StringUtilTest.shouldReturnProperLenghtWhenStringIsOddAndLessThan8" />
+      <item itemvalue="JUnit.StringUtilTest.shouldProperlyFormatMoney" />
+      <item itemvalue="JUnit.StringUtilTest.parametersForShouldProperlyFormatMoney" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringUtilTest.shouldProperlyFormatMoney" />
+        <item itemvalue="JUnit.StringUtilTest.parametersForShouldProperlyFormatMoney" />
         <item itemvalue="JUnit.StringUtilTest.shouldReturnProperLenghtWhenStringIsEvenAndLessThan8" />
         <item itemvalue="JUnit.StringUtilTest.shouldTrimTooLongText" />
         <item itemvalue="JUnit.StringUtilTest.shouldReturnProperLenghtWhenStringIsOddAndLessThan8" />
-        <item itemvalue="JUnit.StringUtilTest" />
-        <item itemvalue="JUnit.StringUtilTest.shouldReturnUnmodifiedTextIfLenghtMatched" />
       </list>
     </recent_temporary>
   </component>
@@ -671,22 +642,17 @@
       <option name="project" value="LOCAL" />
       <updated>1541323991973</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added test and StringUtil which control lenght of Product Name">
+      <created>1541327648816</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1541327648816</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringUtilTest - 2018.11.04 at 11h 23m 40s.xml">
-      <configuration name="StringUtilTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringUtilTest - 2018.11.04 at 11h 24m 12s.xml">
-      <configuration name="StringUtilTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringUtilTest_shouldReturnProperLenghtWhenStringIsOddAndLessThan8 - 2018.11.04 at 11h 24m 17s.xml">
-      <configuration name="StringUtilTest.shouldReturnProperLenghtWhenStringIsOddAndLessThan8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringUtilTest_shouldReturnProperLenghtWhenStringIsOddAndLessThan8 - 2018.11.04 at 11h 24m 25s.xml">
-      <configuration name="StringUtilTest.shouldReturnProperLenghtWhenStringIsOddAndLessThan8" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StringUtilTest_shouldReturnProperLenghtWhenStringIsOddAndLessThan8 - 2018.11.04 at 11h 24m 41s.xml">
       <configuration name="StringUtilTest.shouldReturnProperLenghtWhenStringIsOddAndLessThan8" configurationId="JUnit" />
     </history-entry>
@@ -704,6 +670,18 @@
     </history-entry>
     <history-entry file="StringUtilTest_shouldReturnProperLenghtWhenStringIsEvenAndLessThan8 - 2018.11.04 at 11h 28m 41s.xml">
       <configuration name="StringUtilTest.shouldReturnProperLenghtWhenStringIsEvenAndLessThan8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringUtilTest_shouldReturnProperLenghtWhenStringIsEvenAndLessThan8 - 2018.11.04 at 11h 32m 26s.xml">
+      <configuration name="StringUtilTest.shouldReturnProperLenghtWhenStringIsEvenAndLessThan8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringUtilTest_shouldProperlyFormatMoney - 2018.11.04 at 11h 50m 02s.xml">
+      <configuration name="StringUtilTest.shouldProperlyFormatMoney" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringUtilTest_shouldProperlyFormatMoney - 2018.11.04 at 12h 23m 20s.xml">
+      <configuration name="StringUtilTest.shouldProperlyFormatMoney" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringUtilTest_shouldProperlyFormatMoney - 2018.11.04 at 12h 23m 56s.xml">
+      <configuration name="StringUtilTest.shouldProperlyFormatMoney" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -723,7 +701,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31096563" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23404256" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -752,7 +730,8 @@
     <MESSAGE value="Added builder to Tray class and Product class" />
     <MESSAGE value="Added probability to products and price" />
     <MESSAGE value="Added probability to products and price - second way" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added probability to products and price - second way" />
+    <MESSAGE value="Added test and StringUtil which control lenght of Product Name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test and StringUtil which control lenght of Product Name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -765,9 +744,17 @@
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/pl/sdacademy/vending/util/StringUtilTest.java</url>
+          <line>65</line>
+          <properties class="pl.sdacademy.vending.util.StringUtilTest" method="shouldProperlyFormatMoney">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/pl/sdacademy/vending/util/StringUtilTest.java</url>
-          <line>44</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -803,13 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -840,7 +820,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
-          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -926,7 +906,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/ThinkingIsFun.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -944,15 +931,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/util/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="271">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/sdacademy/vending/util/StringUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="84">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
