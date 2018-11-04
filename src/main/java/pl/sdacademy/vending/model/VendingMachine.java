@@ -61,4 +61,15 @@ public class VendingMachine {
     public Long colsCount(){
         return colsCount;
     }
+    public Optional<String> productNameAtPosition(int rowNo, int colsNo){
+
+        Optional<Tray> trayAtPosition = getTrayAtPosition(rowNo, colsNo);
+        if (trayAtPosition.isPresent()){
+            return trayAtPosition.get().firstProductName();
+        }else {
+            return Optional.empty();
+        }
+        //pobierz nazwe pierwszego produktu
+        //zwroc optional
+    }
 }

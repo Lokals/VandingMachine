@@ -1,30 +1,39 @@
 package pl.sdacademy.vending.util;
 
 public class StringUtil {
+
+    public static String duplicateText(String text, Integer count){
+        StringBuilder duplicatedText = new StringBuilder();
+        for (int i = 0; i <count; i++){
+            duplicatedText = duplicatedText.append(text);
+        }
+        return duplicatedText.toString();
+    }
+
+
     public static  String adjustText(String text, Integer length){
         if (text.length() > length){
             text = text.substring(0, Math.min(text.length(), length));
             return text;
         }
-        StringBuilder x = new StringBuilder();
+
         if (text.length()%2 == 0 && text.length() < length){
             int numSpac = length-text.length();
-
+            StringBuilder x = new StringBuilder();
             for (int i = 1; i <=numSpac/2; i++ ){
-                x = x.append(" ");
+                x.append(" ");
 
             }
             return x+text+x;
         }
-        StringBuilder y = new StringBuilder();
+
         if (text.length()%2 != 0 && text.length() < length){
             int numSpac = length-text.length();
-
+            StringBuilder y = new StringBuilder();
             for (int i = 1; i <=numSpac/2; i++ ){
-                y = y.append(" ");
-
+                y.append(" ");
             }
-            return y.append(" ")+text+y.delete(1,1);
+            return y.append(" ")+text+y.delete(1,2);
         }
 
         return text;
@@ -44,9 +53,9 @@ public class StringUtil {
     private static String beforeComma(Long value) {
         String integrals = Long.toString(value/100);
         StringBuilder formaterMoney = new StringBuilder( );
-        Integer characterTillLastSpace = 0;
+        int characterTillLastSpace = 0;
         for (int charIndex = integrals.length() -1; charIndex >= 0; charIndex--){
-                characterTillLastSpace++;
+            characterTillLastSpace++;
             formaterMoney = formaterMoney.append(integrals.charAt(charIndex));
             if (characterTillLastSpace >= 3) {
                     formaterMoney.append(" ");

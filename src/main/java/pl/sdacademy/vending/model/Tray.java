@@ -1,6 +1,7 @@
 package pl.sdacademy.vending.model;
 
 import java.util.ArrayDeque;
+import java.util.Optional;
 import java.util.Queue;
 
 public class Tray {
@@ -8,6 +9,11 @@ public class Tray {
 
     private  String symbol;
     private Long price;
+
+    public Long getPrice() {
+        return price;
+    }
+
     private Queue<Product> products;
 
 
@@ -17,12 +23,20 @@ public class Tray {
         products = builder.products;
     }
 
+    public Optional<String> firstProductName(){
+        return Optional.ofNullable(products.peek()).map(Product::getName);
+    }
+
     public String getSymbol() {
         return symbol;
     }
 
     public static Builder builder(String symbol){
         return new Builder(symbol);
+    }
+
+    public Optional<Product> buyProduct() {
+        return Optional.ofNullable(products.poll( ));
     }
 
     public static class Builder{
