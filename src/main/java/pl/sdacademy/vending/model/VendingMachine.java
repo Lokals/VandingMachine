@@ -3,6 +3,7 @@ package pl.sdacademy.vending.model;
 import pl.sdacademy.vending.util.Configuration;
 
 import java.util.Optional;
+import java.util.Random;
 
 public class VendingMachine {
     private final Configuration configuration;
@@ -22,14 +23,42 @@ public class VendingMachine {
         }
         trays = new Tray[rowsCount.intValue()][colsCount.intValue()];
 
+        Random random = new Random();
         for (int i= 0; i < rowsCount; i++){
             for (int j = 0; j < colsCount; j++){
-                char symbolLetter = (char)('A' + j);
-                int symbolNumber = i + 1;
-                String symbol = "" + symbolLetter + symbolNumber;
-                Tray tray = Tray.builder(symbol).build( );
-                trays[i][j] = tray;
+                if (random.nextInt(10) < 8) {
+                    generateTrayAtPosition(i, j);
+                }
             }
+        }
+    }
+
+    private void generateTrayAtPosition(int i, int j) {
+        Random random = new Random();
+        long priceProduct = random.nextInt(901) + 100;
+        char symbolLetter = (char) ('A' + j);
+        int symbolNumber = i + 1;
+        String symbol = "" + symbolLetter + symbolNumber;
+        int prodProbability = random.nextInt(10);
+        if ( prodProbability < 1){
+            //2 prod
+            Tray tray = Tray.builder(symbol)
+                    .price(priceProduct)
+                    .product(Product.builder("Product " + symbol).build( ))
+                    .product(Product.builder("Product " + symbol).build( ))
+                    .build( );
+            trays[i][j] = tray;
+        } else if (prodProbability < 5){
+            Tray tray = Tray.builder(symbol)
+                    .price(priceProduct)
+                    .product(Product.builder("Product " + symbol).build( ))
+                    .build( );
+            trays[i][j] = tray;
+        }else {
+            Tray tray = Tray.builder(symbol)
+                    .price(priceProduct)
+                    .build( );
+            trays[i][j] = tray;
         }
     }
 
@@ -37,7 +66,7 @@ public class VendingMachine {
         if (r >= rowsCount || k >= colsCount || r < 0 || k < 0 ){
             return Optional.empty();
         }
-        return Optional.of(trays[r][k]);
+        return Optional.ofNullable(trays[r][k]);
     }
     public Long rowCount(){return rowsCount; }
 

@@ -12,7 +12,7 @@ public class Main {
         new CustomerOperationController(machine).printMachine();
 
         ThinkingIsFun fun = new ThinkingIsFun();
-        fun.printTree(4);
+        fun.printTree(3);
     }
 
 }
