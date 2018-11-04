@@ -40,26 +40,14 @@ public class VendingMachine {
         int symbolNumber = i + 1;
         String symbol = "" + symbolLetter + symbolNumber;
         int prodProbability = random.nextInt(10);
-        if ( prodProbability < 1){
-            //2 prod
-            Tray tray = Tray.builder(symbol)
-                    .price(priceProduct)
-                    .product(Product.builder("Product " + symbol).build( ))
-                    .product(Product.builder("Product " + symbol).build( ))
-                    .build( );
-            trays[i][j] = tray;
-        } else if (prodProbability < 5){
-            Tray tray = Tray.builder(symbol)
-                    .price(priceProduct)
-                    .product(Product.builder("Product " + symbol).build( ))
-                    .build( );
-            trays[i][j] = tray;
-        }else {
-            Tray tray = Tray.builder(symbol)
-                    .price(priceProduct)
-                    .build( );
-            trays[i][j] = tray;
+        Tray.Builder trayBuilder = Tray.builder(symbol).price(priceProduct);
+        if (prodProbability < 5) {
+            trayBuilder = trayBuilder.product(Product.builder("Product" + symbol).build( ));
         }
+        if (prodProbability < 1){
+            trayBuilder = trayBuilder.product(Product.builder("Product" + symbol).build( ));
+        }
+        trays[i][j] = trayBuilder.build();
     }
 
     public Optional<Tray> getTrayAtPosition(int r, int k){
