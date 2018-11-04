@@ -1,9 +1,11 @@
 package pl.sdacademy.vending.model;
 
 import pl.sdacademy.vending.util.Configuration;
+import pl.sdacademy.vending.util.StringUtil;
 
 import java.util.Optional;
 import java.util.Random;
+import java.util.Scanner;
 
 public class VendingMachine {
     private final Configuration configuration;
@@ -69,7 +71,23 @@ public class VendingMachine {
         }else {
             return Optional.empty();
         }
-        //pobierz nazwe pierwszego produktu
-        //zwroc optional
+    }
+    public Optional<Product> buyProductWithSymbol(String traySymbol){
+
+        if (traySymbol.length() != 2){
+            return Optional.empty();
+        }
+        char trayLetter = traySymbol.toUpperCase().charAt(0);
+        char trayNumber = traySymbol.charAt(1);
+        int rowNo = trayLetter - 'A';
+        int colNo = trayNumber - '1';
+
+        Tray tray = trays[rowNo][colNo];
+        if (tray == null){
+            return  Optional.empty();
+        } else{
+            return tray.buyProduct();
+        }
+
     }
 }
