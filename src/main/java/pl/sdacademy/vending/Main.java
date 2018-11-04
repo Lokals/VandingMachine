@@ -11,7 +11,8 @@ public class Main {
         VendingMachine machine = new VendingMachine(configuration );
         new CustomerOperationController(machine).printMachine();
 
-
+        ThinkingIsFun fun = new ThinkingIsFun();
+        fun.printTree(4);
     }
 
 }

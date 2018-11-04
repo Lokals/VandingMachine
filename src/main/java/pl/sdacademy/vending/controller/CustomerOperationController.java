@@ -1,6 +1,9 @@
 package pl.sdacademy.vending.controller;
 
+import pl.sdacademy.vending.model.Tray;
 import pl.sdacademy.vending.model.VendingMachine;
+
+import java.util.Optional;
 
 public class CustomerOperationController {
 
@@ -12,30 +15,32 @@ public class CustomerOperationController {
     }
 
     public void printMachine(){
-        char letter = 'A';
 
-        for (int r = 0; r < machine.rowCount( ); r++) {
-            for (int k = 0; k < machine.colsCount(); k++) {
+
+        for (int k = 0; k < machine.colsCount(); k++) {
+            for (int r = 0; r < machine.rowCount(); r++) {
                 printUpperBoundary(k,r);
             }
             System.out.println( );
-            for (int k = 1; k <= machine.colsCount( ); k++) {
-                printSymbol(k,r, letter);
+            for (int r = 0; r < machine.rowCount( ); r++) {
+                printSymbol(k,r);
 
             }
             System.out.println( );
-            for (int k = 0; k < machine.colsCount( ); k++) {
+            for (int r = 0; r < machine.rowCount( ); r++) {
                 printLowerBoundary(k,r);
             }
-            letter++;
+
             System.out.println( );
         }
     }
-    private void  printUpperBoundary(int k, int r){
+    private void  printUpperBoundary(int r, int k){
         System.out.print("+--------+");
     }
-    private void  printSymbol(int k, int r, char letter){
-        System.out.print("|   " + letter + k + "   |");
+    private void  printSymbol(int k, int r){
+        Optional<Tray> tray = machine.getTrayAtPosition(r, k);
+        String traySymbol = tray.map(Tray::getSymbol).orElse("--");
+        System.out.print("|   " + traySymbol + "   |");
     }
     private void  printLowerBoundary(int k, int r){
         System.out.print("+--------+");
