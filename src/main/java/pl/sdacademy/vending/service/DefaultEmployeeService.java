@@ -34,9 +34,6 @@ public class DefaultEmployeeService implements EmployeeService {
             String sth = "Please recheck provided values";
             return Optional.of(sth);
         }
-
-
-        return Optional.empty( );
     }
 }
 /*
