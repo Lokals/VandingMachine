@@ -60,13 +60,13 @@ public class CustomerOperationController {
     }
 
     private void printSymbol(int k, int r) {
-        Optional<Tray> tray = machine.getTrayAtPosition(r, k);
+        Optional<Tray> tray = machine.getTrayAtPosition(k, r);
         String traySymbol = tray.map(Tray::getSymbol).orElse("--");
         System.out.print("|" + StringUtil.adjustText(traySymbol, trayWidth) + "|");
     }
 
     private void printPrice(int k, int r) {
-        Optional<Tray> tray = machine.getTrayAtPosition(r, k);
+        Optional<Tray> tray = machine.getTrayAtPosition(k, r);
         Long price = tray.map(Tray::getPrice).orElse(0L);
         String formatedMoney = StringUtil.formatMoney(price);
         String centeredMoney = StringUtil.adjustText(formatedMoney, trayWidth);
