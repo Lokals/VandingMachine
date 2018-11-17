@@ -1,5 +1,6 @@
 package pl.sdacademy.vending.controller;
 
+import pl.sdacademy.vending.model.Product;
 import pl.sdacademy.vending.model.Tray;
 import pl.sdacademy.vending.model.VendingMachine;
 import pl.sdacademy.vending.util.StringUtil;
@@ -49,6 +50,10 @@ public class CustomerOperationController {
         }
     }
 
+
+    public Optional<Product> buyProductForSymbol(String traySymbol){
+        return machine.buyProductWithSymbol(traySymbol);
+    }
 
     private void printUpperBoundary(int r, int k) {
         System.out.print("+" + StringUtil.duplicateText("-", trayWidth) + "+");
