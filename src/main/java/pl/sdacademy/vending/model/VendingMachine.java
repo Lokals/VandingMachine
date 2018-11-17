@@ -35,11 +35,11 @@ public class VendingMachine {
         }
     }
 
-    private void generateTrayAtPosition(int i, int j) {
+    private void generateTrayAtPosition(int rowNo, int colNo) {
         Random random = new Random();
         long priceProduct = random.nextInt(901) + 100;
-        char symbolLetter = (char) ('A' + j);
-        int symbolNumber = i + 1;
+        char symbolLetter = (char) ('A' + rowNo);
+        int symbolNumber = colNo + 1;
         String symbol = "" + symbolLetter + symbolNumber;
         int prodProbability = random.nextInt(10);
         Tray.Builder trayBuilder = Tray.builder(symbol).price(priceProduct);
@@ -49,8 +49,9 @@ public class VendingMachine {
         if (prodProbability < 1){
             trayBuilder = trayBuilder.product(Product.builder("Product" + symbol).build( ));
         }
-        trays[i][j] = trayBuilder.build();
+        trays[rowNo][colNo] = trayBuilder.build();
     }
+
 
     public Optional<Tray> getTrayAtPosition(int r, int k){
         if (r >= rowsCount || k >= colsCount || r < 0 || k < 0 ){

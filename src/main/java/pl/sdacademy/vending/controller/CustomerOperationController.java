@@ -18,31 +18,31 @@ public class CustomerOperationController {
     public void printMachine() {
 
 
-        for (int k = 0; k < machine.colsCount( ); k++) {
-            for (int r = 0; r < machine.rowCount( ); r++) {
+        for (int k = 0; k < machine.rowCount( ); k++) {
+            for (int r = 0; r < machine.colsCount( ); r++) {
                 printUpperBoundary(k, r);
             }
             System.out.println( );
-            for (int r = 0; r < machine.rowCount( ); r++) {
+            for (int r = 0; r < machine.colsCount( ); r++) {
                 printSymbol(k, r);
 
             }
 
             System.out.println( );
-            for (int r = 0; r < machine.rowCount( ); r++) {
+            for (int r = 0; r < machine.colsCount( ); r++) {
                 printName(k, r);
 
             }
 
             System.out.println( );
-            for (int r = 0; r < machine.rowCount( ); r++) {
+            for (int r = 0; r < machine.colsCount( ); r++) {
                 printPrice(k, r);
 
             }
 
             System.out.println( );
             //wyswietl cene produktu
-            for (int r = 0; r < machine.rowCount( ); r++) {
+            for (int r = 0; r < machine.colsCount( ); r++) {
                 printLowerBoundary(k, r);
             }
 
@@ -82,7 +82,6 @@ public class CustomerOperationController {
     }
 
     private void printLowerBoundary(int k, int r) {
-
 
         System.out.print("+" + StringUtil.duplicateText("-", trayWidth) + "+");
     }

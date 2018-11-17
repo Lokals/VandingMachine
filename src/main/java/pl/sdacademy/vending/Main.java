@@ -1,9 +1,11 @@
 package pl.sdacademy.vending;
 
 import pl.sdacademy.vending.controller.CustomerOperationController;
+import pl.sdacademy.vending.model.Product;
 import pl.sdacademy.vending.model.VendingMachine;
 import pl.sdacademy.vending.util.Configuration;
 
+import java.util.Optional;
 import java.util.Scanner;
 
 public class Main {
@@ -15,20 +17,34 @@ public class Main {
     }
 
 
-
     private void init() {
         Configuration configuration = new Configuration( );
         VendingMachine machine = new VendingMachine(configuration );
-        new CustomerOperationController(machine).printMachine();
+//        new CustomerOperationController(machine).printMachine();
+        CustomerOperationController customerOperationController = new CustomerOperationController(machine);
         while (true) {
+            customerOperationController.printMachine();
             printMenu( );
             try {
                 UserMenySelection userSelection = getUserSelection( );
                 switch (userSelection) {
                     case BUY_PRODUCTS:
-                        // 1. pobrac od uzytkownica symbol tacki
-                        //2. wywolac odpowiednia metode z koltolera
+                        System.out.println(" > tray symbol");
+                        String userProductSelection = new Scanner(System.in).nextLine();
+                        Optional<Product> buyProduct = customerOperationController.buyProductForSymbol(userProductSelection);
+                        if (buyProduct.isPresent()){
+                            System.out.println("Product is yours: " + buyProduct.get().getName() );
 
+                        }
+                        else{
+                            System.out.println("The product is not exist");
+                        }
+                        //CustomerOperationController customerOperationController = new CustomerOperationController();
+                        //customerOperationController.buyProductForSymbol()
+                        // 1. pobrac od uzytkownica symbol tacki
+                        // 2. wywolac odpowiednia metode z koltolera(buyProductForSymbol(String traySymbol))
+                        // 3. jeżeli udalo sie kupic produkt, to wypisz na ekran potwierdzenie oraz nazwę produktu
+                        // 4. Jeżeli nie udało się kupić, to wyświetlamy komunikat o braku produktu.
                         break;
                     case EXIT:
                         System.out.println("Bye");
