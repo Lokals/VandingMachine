@@ -28,14 +28,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="37" />
+          <entry key="java" value="39" />
           <entry key="properties" value="8" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="37" />
+          <entry key="JAVA" value="39" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="8" />
           <entry key="XML" value="2" />
@@ -45,16 +45,16 @@
         <counts>
           <entry key="dummy" value="10" />
           <entry key="gitignore" value="11" />
-          <entry key="java" value="10471" />
+          <entry key="java" value="10706" />
           <entry key="properties" value="103" />
-          <entry key="txt" value="526" />
+          <entry key="txt" value="570" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10471" />
-          <entry key="PLAIN_TEXT" value="547" />
+          <entry key="JAVA" value="10706" />
+          <entry key="PLAIN_TEXT" value="591" />
           <entry key="Properties" value="103" />
           <entry key="XML" value="1" />
         </counts>
@@ -66,12 +66,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/model/VendingMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="99" column="20" lean-forward="true" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+            <state relative-caret-position="221">
+              <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#VendingMachine#0;class#VendingMachine#0" />
-                <element signature="method#getTrayAtPosition#0;class#VendingMachine#0" />
+                <element signature="e#1591#1592#0" expanded="true" />
+                <element signature="e#1623#1624#0" expanded="true" />
                 <element signature="method#productNameAtPosition#0;class#VendingMachine#0" />
                 <element signature="method#buyProductWithSymbol#0;class#VendingMachine#0" />
               </folding>
@@ -82,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pl/sdacademy/vending/model/VendingMachineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="86" column="70" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
+            <state relative-caret-position="170">
+              <caret line="125" column="50" lean-forward="true" selection-start-line="125" selection-start-column="50" selection-end-line="125" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -148,6 +148,26 @@
     <option name="y" value="242" />
     <option name="width" value="1156" />
     <option name="height" value="681" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>EqualsBetweenInconvertibleTypes</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -374,7 +394,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="vendingmachinete&#9;PSI&#9;JAVA://pl.sdacademy.vending.model.VendingMachineTest&#10;vend&#9;FILE&#9;file://C:/Users/0o0/IdeaProjects/jvm/VandingMachine/src/main/java/pl/sdacademy/vending/model/VendingMachine.java&#10;coc&#9;FILE&#9;file://C:/Users/0o0/IdeaProjects/jvm/VandingMachine/src/main/java/pl/sdacademy/vending/controller/CustomerOperationController.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542456613719" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542459242672" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -412,52 +432,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VendingMachineTest.shouldBeAbleToAddTrayToEmptySlot">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.sdacademy.vending.Main" />
-      <module name="VandingMachine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.sdacademy.vending.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringUtilTest.shouldProperlyFormatMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="VandingMachine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.sdacademy.vending.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.sdacademy.vending.util" />
-      <option name="MAIN_CLASS_NAME" value="pl.sdacademy.vending.util.StringUtilTest" />
-      <option name="METHOD_NAME" value="shouldProperlyFormatMoney" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrayTest.shouldBeAbleTobuzLastAvaiableProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="VandingMachine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.sdacademy.vending.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.sdacademy.vending.model" />
-      <option name="MAIN_CLASS_NAME" value="pl.sdacademy.vending.model.TrayTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleTobuzLastAvaiableProduct" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.VendingMachineTest">
     <configuration name="VendingMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VandingMachine" />
       <extension name="coverage">
@@ -472,7 +447,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendingMachineTest.shouldBeAbleToAddTrayToEmptySlot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendingMachineTest.shouldControlIfColAmoutIslessThan0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VandingMachine" />
       <extension name="coverage">
         <pattern>
@@ -482,26 +457,74 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.sdacademy.vending.model" />
       <option name="MAIN_CLASS_NAME" value="pl.sdacademy.vending.model.VendingMachineTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleToAddTrayToEmptySlot" />
+      <option name="METHOD_NAME" value="shouldControlIfColAmoutIslessThan0" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachineTest.shouldNotBeAbleToAddTooLongSymbol" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VandingMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sdacademy.vending.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sdacademy.vending.model" />
+      <option name="MAIN_CLASS_NAME" value="pl.sdacademy.vending.model.VendingMachineTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToAddTooLongSymbol" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachineTest.shouldNotBeAbleToAddTrayToNotExistingPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VandingMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sdacademy.vending.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sdacademy.vending.model" />
+      <option name="MAIN_CLASS_NAME" value="pl.sdacademy.vending.model.VendingMachineTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToAddTrayToNotExistingPosition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachineTest.shouldNotBeAbleToAddTrayToTakenSlot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VandingMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sdacademy.vending.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sdacademy.vending.model" />
+      <option name="MAIN_CLASS_NAME" value="pl.sdacademy.vending.model.VendingMachineTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToAddTrayToTakenSlot" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.StringUtilTest.shouldProperlyFormatMoney" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.TrayTest.shouldBeAbleTobuzLastAvaiableProduct" />
       <item itemvalue="JUnit.VendingMachineTest" />
-      <item itemvalue="JUnit.VendingMachineTest.shouldBeAbleToAddTrayToEmptySlot" />
+      <item itemvalue="JUnit.VendingMachineTest.shouldNotBeAbleToAddTrayToTakenSlot" />
+      <item itemvalue="JUnit.VendingMachineTest.shouldNotBeAbleToAddTrayToNotExistingPosition" />
+      <item itemvalue="JUnit.VendingMachineTest.shouldControlIfColAmoutIslessThan0" />
+      <item itemvalue="JUnit.VendingMachineTest.shouldNotBeAbleToAddTooLongSymbol" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VendingMachineTest.shouldBeAbleToAddTrayToEmptySlot" />
         <item itemvalue="JUnit.VendingMachineTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.TrayTest.shouldBeAbleTobuzLastAvaiableProduct" />
-        <item itemvalue="JUnit.StringUtilTest.shouldProperlyFormatMoney" />
+        <item itemvalue="JUnit.VendingMachineTest.shouldNotBeAbleToAddTooLongSymbol" />
+        <item itemvalue="JUnit.VendingMachineTest.shouldControlIfColAmoutIslessThan0" />
+        <item itemvalue="JUnit.VendingMachineTest.shouldNotBeAbleToAddTrayToNotExistingPosition" />
+        <item itemvalue="JUnit.VendingMachineTest.shouldNotBeAbleToAddTrayToTakenSlot" />
       </list>
     </recent_temporary>
   </component>
@@ -635,39 +658,46 @@
       <option name="project" value="LOCAL" />
       <updated>1542449327409</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="AddTrayToEmptySlot test, added posibility add tray at position">
+      <created>1542456648659</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1542456648659</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringUtilTest_shouldProperlyFormatMoney - 2018.11.04 at 13h 13m 14s.xml">
-      <configuration name="StringUtilTest.shouldProperlyFormatMoney" configurationId="JUnit" />
+    <history-entry file="VendingMachineTest_shouldNotBeAbleToAddTrayToTakenSlot - 2018.11.17 at 13h 25m 17s.xml">
+      <configuration name="VendingMachineTest.shouldNotBeAbleToAddTrayToTakenSlot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringUtilTest_shouldProperlyFormatMoney - 2018.11.04 at 13h 18m 06s.xml">
-      <configuration name="StringUtilTest.shouldProperlyFormatMoney" configurationId="JUnit" />
+    <history-entry file="VendingMachineTest_shouldNotBeAbleToAddTrayToTakenSlot - 2018.11.17 at 13h 32m 00s.xml">
+      <configuration name="VendingMachineTest.shouldNotBeAbleToAddTrayToTakenSlot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TrayTest_shouldBeAbleTobuzLastAvaiableProduct - 2018.11.04 at 14h 47m 52s.xml">
-      <configuration name="TrayTest.shouldBeAbleTobuzLastAvaiableProduct" configurationId="JUnit" />
+    <history-entry file="VendingMachineTest_shouldNotBeAbleToAddTrayToTakenSlot - 2018.11.17 at 13h 33m 29s.xml">
+      <configuration name="VendingMachineTest.shouldNotBeAbleToAddTrayToTakenSlot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TrayTest_shouldBeAbleTobuzLastAvaiableProduct - 2018.11.04 at 14h 48m 25s.xml">
-      <configuration name="TrayTest.shouldBeAbleTobuzLastAvaiableProduct" configurationId="JUnit" />
+    <history-entry file="VendingMachineTest_shouldNotBeAbleToAddTrayToTakenSlot - 2018.11.17 at 13h 34m 34s.xml">
+      <configuration name="VendingMachineTest.shouldNotBeAbleToAddTrayToTakenSlot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VendingMachineTest - 2018.11.17 at 11h 54m 29s.xml">
+    <history-entry file="VendingMachineTest_shouldNotBeAbleToAddTrayToTakenSlot - 2018.11.17 at 13h 36m 18s.xml">
+      <configuration name="VendingMachineTest.shouldNotBeAbleToAddTrayToTakenSlot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VendingMachineTest - 2018.11.17 at 13h 37m 02s.xml">
       <configuration name="VendingMachineTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VendingMachineTest_shouldBeAbleToAddTrayToEmptySlot - 2018.11.17 at 11h 58m 46s.xml">
-      <configuration name="VendingMachineTest.shouldBeAbleToAddTrayToEmptySlot" configurationId="JUnit" />
+    <history-entry file="VendingMachineTest_shouldNotBeAbleToAddTrayToTakenSlot - 2018.11.17 at 13h 39m 08s.xml">
+      <configuration name="VendingMachineTest.shouldNotBeAbleToAddTrayToTakenSlot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VendingMachineTest_shouldBeAbleToAddTrayToEmptySlot - 2018.11.17 at 12h 25m 43s.xml">
-      <configuration name="VendingMachineTest.shouldBeAbleToAddTrayToEmptySlot" configurationId="JUnit" />
+    <history-entry file="VendingMachineTest_shouldNotBeAbleToAddTrayToTakenSlot - 2018.11.17 at 13h 39m 41s.xml">
+      <configuration name="VendingMachineTest.shouldNotBeAbleToAddTrayToTakenSlot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VendingMachineTest_shouldBeAbleToAddTrayToEmptySlot - 2018.11.17 at 12h 25m 53s.xml">
-      <configuration name="VendingMachineTest.shouldBeAbleToAddTrayToEmptySlot" configurationId="JUnit" />
+    <history-entry file="VendingMachineTest_shouldNotBeAbleToAddTrayToTakenSlot - 2018.11.17 at 13h 45m 51s.xml">
+      <configuration name="VendingMachineTest.shouldNotBeAbleToAddTrayToTakenSlot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VendingMachineTest_shouldBeAbleToAddTrayToEmptySlot - 2018.11.17 at 12h 26m 27s.xml">
-      <configuration name="VendingMachineTest.shouldBeAbleToAddTrayToEmptySlot" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VendingMachineTest_shouldBeAbleToAddTrayToEmptySlot - 2018.11.17 at 12h 31m 04s.xml">
-      <configuration name="VendingMachineTest.shouldBeAbleToAddTrayToEmptySlot" configurationId="JUnit" />
+    <history-entry file="VendingMachineTest_shouldNotBeAbleToAddTrayToNotExistingPosition - 2018.11.17 at 13h 48m 45s.xml">
+      <configuration name="VendingMachineTest.shouldNotBeAbleToAddTrayToNotExistingPosition" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -683,7 +713,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24659607" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24659607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -692,7 +722,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3846154" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3846154" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -761,7 +791,8 @@
     <MESSAGE value="Added posibility to chose menu" />
     <MESSAGE value="Added selecting product" />
     <MESSAGE value="Fixed random places" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed random places" />
+    <MESSAGE value="AddTrayToEmptySlot test, added posibility add tray at position" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddTrayToEmptySlot test, added posibility add tray at position" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -798,7 +829,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/model/VendingMachine.java</url>
-          <line>85</line>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -968,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/jdk/lib/src.zip!/java.base/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="563" selection-start-line="563" selection-end-line="563" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/controller/CustomerOperationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -985,14 +1009,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://E:/jdk/lib/src.zip!/java.base/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="563" selection-start-line="563" selection-end-line="563" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sdacademy/vending/model/VendingMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="99" column="20" lean-forward="true" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+        <state relative-caret-position="221">
+          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#VendingMachine#0;class#VendingMachine#0" />
-            <element signature="method#getTrayAtPosition#0;class#VendingMachine#0" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
             <element signature="method#productNameAtPosition#0;class#VendingMachine#0" />
             <element signature="method#buyProductWithSymbol#0;class#VendingMachine#0" />
           </folding>
@@ -1001,8 +1032,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/sdacademy/vending/model/VendingMachineTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="86" column="70" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
+        <state relative-caret-position="170">
+          <caret line="125" column="50" lean-forward="true" selection-start-line="125" selection-start-column="50" selection-end-line="125" selection-end-column="50" />
         </state>
       </provider>
     </entry>
