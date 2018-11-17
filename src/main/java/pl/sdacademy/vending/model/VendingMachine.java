@@ -43,10 +43,10 @@ public class VendingMachine {
         String symbol = "" + symbolLetter + symbolNumber;
         int prodProbability = random.nextInt(10);
         Tray.Builder trayBuilder = Tray.builder(symbol).price(priceProduct);
-        if (prodProbability < 5) {
+        if (prodProbability == 1) {
             trayBuilder = trayBuilder.product(Product.builder("Product" + symbol).build( ));
         }
-        if (prodProbability < 1){
+        if (prodProbability == 0){
             trayBuilder = trayBuilder.product(Product.builder("Product" + symbol).build( ));
         }
         trays[rowNo][colNo] = trayBuilder.build();
@@ -89,6 +89,15 @@ public class VendingMachine {
         } else{
             return tray.buyProduct();
         }
+
+    }
+
+    public boolean placeTray(Tray trayToBeAdded) {
+        String symbol = trayToBeAdded.getSymbol();
+        int rowNum = symbol.charAt(0) -'A';
+        int colNum = symbol.charAt(1) -'1';
+        trays[rowNum][colNum] = trayToBeAdded;
+        return true;
 
     }
 }
