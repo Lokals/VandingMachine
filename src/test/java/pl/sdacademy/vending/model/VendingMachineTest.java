@@ -131,7 +131,7 @@ public class VendingMachineTest {
     public void shouldNotBeAbleToAddTooLongSymbol()
     {
         // Given
-        Tray tray = Tray.builder("A12").build( );
+        Tray tray = Tray.builder("AAA").build( );
         Configuration config = mock(Configuration.class);
 
         doReturn(6L).when(config).getLongProperty(eq("machine.size.rows"),anyLong());

@@ -3,18 +3,19 @@ package pl.sdacademy.vending.model;
 import pl.sdacademy.vending.util.Configuration;
 import pl.sdacademy.vending.util.StringUtil;
 
+import java.io.Serializable;
 import java.util.Optional;
 import java.util.Random;
 import java.util.Scanner;
 
-public class VendingMachine {
-    private final Configuration configuration;
+public class VendingMachine implements Serializable {
+    public static final long serialVersionUID = 1L;
+
     private final Long rowsCount;
     private final Long colsCount;
     private final Tray[][] trays;
 
     public VendingMachine(Configuration configuration){
-        this.configuration = configuration;
         rowsCount = configuration.getLongProperty("machine.size.rows", 6L);
         colsCount = configuration.getLongProperty("machine.size.cols",4L);
         if (rowsCount<=0 || rowsCount > 26L){
